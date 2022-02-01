@@ -1,0 +1,56 @@
+/* To learn more about this file see: https://angular.io/config/tsconfig. */
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "strictPropertyInitialization": false,
+    "noImplicitAny": false,
+    "outDir": "./dist/out-tsc",
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "target": "es2017",
+    "module": "es2020",
+    "paths": {
+      "@ui/my-lib": [
+        "dist/ui/my-lib/ui-my-lib",
+        "dist/ui/my-lib"
+      ],
+      "@ui/t-smart-grid": [
+        "dist/ui/t-smart-grid/ui-t-smart-grid",
+        "dist/ui/t-smart-grid"
+      ],
+      "my-libsdfg": [
+        "dist/my-libsdfg/my-libsdfg",
+        "dist/my-libsdfg"
+      ],
+      "my-libssfgggtgg": [
+        "dist/my-libssfgggtgg/my-libssfgggtgg",
+        "dist/my-libssfgggtgg"
+      ],
+      "t-smart-grid": [
+        "dist/t-smart-grid/t-smart-grid",
+        "dist/t-smart-grid"
+      ]
+    },
+    "lib": [
+      "es2020",
+      "dom"
+    ]
+  },
+  "angularCompilerOptions": {
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "strictTemplates": true
+  }
+}

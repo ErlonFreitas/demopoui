@@ -1,0 +1,24 @@
+<div class="po-wrapper">
+  <po-toolbar
+    [p-title]="getTitle()"
+    [p-profile]=""
+    [p-profile-actions]=""
+    [p-show-notification]="false"
+    p-actions-icon="po-icon-info"
+    [p-actions]=""
+  >
+  </po-toolbar>
+
+  <po-menu    
+    [p-menus]="menuReportApp"
+    p-logo="assets/images/totvs-logo-menu.svg"
+    p-short-logo="assets/images/totvs-short-logo-menu.svg"
+    [p-collapsed]="false"
+  >
+  </po-menu>
+  
+  <router-outlet></router-outlet>
+</div>
+
+
+
