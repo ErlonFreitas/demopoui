@@ -8,8 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class PersonComponent implements OnInit {
 
   readonly hostapi = 'http://localhost:8051/api/rh/v1/persons/';
-  readonly title = "Visão de pessoas";
-  
+  readonly title = "Visão de pessoas xx";
+
   constructor() { }
 
   ngOnInit(): void {
