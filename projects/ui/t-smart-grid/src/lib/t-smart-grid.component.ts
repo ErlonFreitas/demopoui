@@ -9,8 +9,9 @@ import { PoBreadcrumb } from '@po-ui/ng-components';
 })
 export class TSmartGridComponent implements OnInit {
   //readonly serviceApi = 'http://localhost:8051/api/rh/v1/persons/';
-  @Input('t-service-api') serviceApi: string;
   @Input('t-title') title: string;
+  @Input('t-data-api') dataApi : string;
+  @Input('t-schema-api') schemaApi: string;
 
   readonly cityOptions: Array<object> = [
     { value: 'São Paulo', label: 'São Paulo' },
@@ -51,6 +52,7 @@ export class TSmartGridComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    //Valida se o "metadataApi" foi prenchido... caso contrario erro.
+    //
   }
-
 }
