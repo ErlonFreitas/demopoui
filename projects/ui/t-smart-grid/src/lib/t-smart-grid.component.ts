@@ -8,10 +8,37 @@ import { PoBreadcrumb } from '@po-ui/ng-components';
   ]
 })
 export class TSmartGridComponent implements OnInit {
-  //readonly serviceApi = 'http://localhost:8051/api/rh/v1/persons/';
-  @Input('t-title') title: string;
-  @Input('t-data-api') dataApi : string;
-  @Input('t-schema-api') schemaApi: string;
+  
+  private _title: string = "";
+  private _dataApi: string = "";
+  private _schemaApi: string = "";
+
+  /** Título*/
+  @Input('t-title') set title(value: string) {
+    this._title = value;
+  }
+  
+  get title(): string{
+    return this._title;
+  }
+
+  /**Configura o endereço da api para acesso aos dados da visão */
+  @Input('t-data-api') set dataApi(value: string) {
+    this._dataApi = value;
+  }
+
+  get dataApi(): string {
+    return this._dataApi;
+  }
+
+  /** Configura o endereço do schema da api */
+  @Input('t-schema-api') set schemaApi(value: string){
+    this._schemaApi = value;
+  }
+
+  get schemaApi(): string {
+    return this.schemaApi;
+  }
 
   readonly cityOptions: Array<object> = [
     { value: 'São Paulo', label: 'São Paulo' },

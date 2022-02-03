@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import {DynamictabledemoComponent} from './dynamictabledemo/dynamictabledemo.component'
 import {PersonComponent} from './person/person.component';
 
-const routes: Routes = [
+export const APPROUTES: Routes = [
   { path: 'usuarios', component: DynamictabledemoComponent},  
   //{ path: '**', component: DynamictabledemoComponent},
   {
@@ -18,7 +18,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(APPROUTES)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
